@@ -18,12 +18,18 @@ public class Gmail {
 		driver = new FirefoxDriver();
 		driver.get("http://www.gmail.com");
 		}
-
+		
 		@Test
 		public void Test()
 		{
-		driver.findElement(By.id("Email")).sendKeys("Test@test.com");
+		driver.findElement(By.id("Passwd")).sendKeys("Password");
 		}
+
+	//	@Test
+	//	public void Test()
+	//	{
+	//	driver.findElement(By.id("Email")).sendKeys("Test@test.com");
+	//	}
 
 		@After
 		public void TearDown()
